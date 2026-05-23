@@ -1,0 +1,14 @@
+{
+  "name": "royal-tailor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run start --prefix server\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.1",
+    "concurrently": "^8.2.2"
+  }
+}

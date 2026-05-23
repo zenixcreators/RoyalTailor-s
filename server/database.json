@@ -1,0 +1,191 @@
+{
+  "customers": [
+    {
+      "id": "CUST-001",
+      "name": "Alexander Wright",
+      "phone": "+1 (555) 019-2834",
+      "address": "742 Evergreen Terrace, Springfield",
+      "notes": "Prefers Italian slim fit cuts, lightweight linens.",
+      "createdAt": "2026-05-10T11:00:00.000Z"
+    },
+    {
+      "id": "CUST-002",
+      "name": "Isabella Sterling",
+      "phone": "+1 (555) 014-9988",
+      "address": "101 Luxury Way, Beverly Hills",
+      "notes": "Premium velvet dresses, bridal alterations.",
+      "createdAt": "2026-05-22T14:30:00.000Z"
+    },
+    {
+      "id": "CUST-003",
+      "name": "Marcus Vance",
+      "phone": "+1 (555) 017-4422",
+      "address": "456 Savile Row, London",
+      "notes": "Double-breasted suits, custom silk linings.",
+      "createdAt": "2026-05-18T09:15:00.000Z"
+    }
+  ],
+  "measurements": [
+    {
+      "customerId": "CUST-001",
+      "chest": "40.0",
+      "waist": "34.0",
+      "shoulder": "18.5",
+      "sleeve": "25.0",
+      "neck": "15.5",
+      "hip": "41.0",
+      "inseam": "32.0",
+      "notes": "Left shoulder sits slightly lower.",
+      "updatedAt": "2026-05-10T11:05:00.000Z"
+    },
+    {
+      "customerId": "CUST-002",
+      "chest": "36.0",
+      "waist": "28.0",
+      "shoulder": "15.0",
+      "sleeve": "22.5",
+      "neck": "14.0",
+      "hip": "38.0",
+      "inseam": "29.0",
+      "notes": "High waist fit.",
+      "updatedAt": "2026-05-22T14:35:00.000Z"
+    },
+    {
+      "customerId": "CUST-003",
+      "chest": "44.0",
+      "waist": "38.0",
+      "shoulder": "19.5",
+      "sleeve": "26.0",
+      "neck": "17.0",
+      "hip": "45.0",
+      "inseam": "31.0",
+      "notes": "Prefers cuffs on trousers.",
+      "updatedAt": "2026-05-18T09:20:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-001",
+      "customerId": "CUST-001",
+      "clothType": "Charcoal 3-Piece Wool Suit",
+      "deliveryDate": "2026-05-28",
+      "status": "Stitching",
+      "totalAmount": 1200,
+      "advancePayment": 500,
+      "remainingBalance": 700,
+      "notes": "Include navy silk lining and custom monogram 'AW'.",
+      "referenceImages": [],
+      "createdAt": "2026-05-20T10:00:00.000Z"
+    },
+    {
+      "id": "ORD-002",
+      "customerId": "CUST-002",
+      "clothType": "Emerald Velvet Evening Gown",
+      "deliveryDate": "2026-06-02",
+      "status": "Received",
+      "totalAmount": 850,
+      "advancePayment": 300,
+      "remainingBalance": 550,
+      "notes": "Sweetheart neckline, floor-length drape.",
+      "referenceImages": [],
+      "createdAt": "2026-05-22T14:30:00.000Z"
+    },
+    {
+      "id": "ORD-003",
+      "customerId": "CUST-003",
+      "clothType": "Midnight Blue Double Blazer",
+      "deliveryDate": "2026-05-24",
+      "status": "Ready",
+      "totalAmount": 950,
+      "advancePayment": 950,
+      "remainingBalance": 0,
+      "notes": "Gold buttons, peak lapels. Customer paid fully in advance.",
+      "referenceImages": [],
+      "createdAt": "2026-05-18T09:15:00.000Z"
+    },
+    {
+      "id": "ORD-004",
+      "customerId": "CUST-001",
+      "clothType": "White Linen Summer Shirt",
+      "deliveryDate": "2026-05-15",
+      "status": "Delivered",
+      "totalAmount": 180,
+      "advancePayment": 100,
+      "remainingBalance": 0,
+      "notes": "Soft collar, relaxed fit. Delivered and paid balance on pickup.",
+      "referenceImages": [],
+      "createdAt": "2026-05-10T11:00:00.000Z"
+    },
+    {
+      "id": "ORD-9819",
+      "customerId": "CUST-001",
+      "clothType": "cotton",
+      "deliveryDate": "2026-05-30",
+      "status": "Received",
+      "totalAmount": 1000,
+      "advancePayment": 0,
+      "remainingBalance": 1000,
+      "notes": "23 1/2",
+      "referenceImages": [],
+      "createdAt": "2026-05-23T08:30:07.791Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TX-001",
+      "orderId": "ORD-001",
+      "amount": 500,
+      "type": "income",
+      "date": "2026-05-20",
+      "description": "Advance for Charcoal 3-Piece Wool Suit"
+    },
+    {
+      "id": "TX-002",
+      "orderId": "ORD-002",
+      "amount": 300,
+      "type": "income",
+      "date": "2026-05-22",
+      "description": "Advance for Emerald Velvet Evening Gown"
+    },
+    {
+      "id": "TX-003",
+      "orderId": "ORD-003",
+      "amount": 950,
+      "type": "income",
+      "date": "2026-05-18",
+      "description": "Full payment for Midnight Blue Double Blazer"
+    },
+    {
+      "id": "TX-004",
+      "orderId": "ORD-004",
+      "amount": 100,
+      "type": "income",
+      "date": "2026-05-10",
+      "description": "Advance for White Linen Summer Shirt"
+    },
+    {
+      "id": "TX-005",
+      "orderId": "ORD-004",
+      "amount": 80,
+      "type": "income",
+      "date": "2026-05-15",
+      "description": "Final balance payment for White Linen Summer Shirt"
+    },
+    {
+      "id": "TX-006",
+      "orderId": "",
+      "amount": 120,
+      "type": "expense",
+      "date": "2026-05-19",
+      "description": "Premium threads and silk buttons purchase"
+    },
+    {
+      "id": "TX-007",
+      "orderId": "",
+      "amount": 45,
+      "type": "expense",
+      "date": "2026-05-21",
+      "description": "Sewing machine maintenance oils"
+    }
+  ]
+}
