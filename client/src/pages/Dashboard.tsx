@@ -132,14 +132,25 @@ const Dashboard = ({ onOpenWizard, unreadCount, onOpenNotif }: DashboardProps) =
       
       {/* ── BRAND HEADER ── */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-        <div>
-          <div className="section-label" style={{ marginBottom: '2px' }}>Atelier</div>
-          <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '28px', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
-            Royal Tailor
-          </h1>
-          <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginTop: '4px', margin: 0 }}>
-            Premium Tailoring Management
-          </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <img 
+            src="/RT-logo.jpeg" 
+            alt="Royal Tailor Logo" 
+            style={{ 
+              width: '46px', 
+              height: '46px', 
+              borderRadius: '12px', 
+              border: '1.5px solid var(--glass-border-strong)',
+              objectFit: 'cover',
+              boxShadow: 'var(--glass-shadow)' 
+            }} 
+          />
+          <div>
+            <div className="section-label" style={{ marginBottom: '2px' }}>Atelier</div>
+            <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '24px', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>
+              Royal Tailor
+            </h1>
+          </div>
         </div>
         <NotificationBell unreadCount={unreadCount} onClick={onOpenNotif} />
       </div>
